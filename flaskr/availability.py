@@ -5,7 +5,7 @@ import datetime
 import calendar
 import sys
 
-bp = Blueprint("availibility", __name__)
+bp = Blueprint("availability", __name__)
 
 days = [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" ]
 
