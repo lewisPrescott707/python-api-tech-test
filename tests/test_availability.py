@@ -2,9 +2,9 @@ import pytest
 import requests
 
 def test_request(flask_port):
-    response = requests.get(f"http://localhost:{flask_port}/?year=2021&month=12&day=4")
+    response = requests.get(f"http://localhost:{flask_port}/?year=2022&month=07&day=10")
     try:
-        print(response.ok)
+        print("Response " + str(response.ok))
         assert response.ok == 200
     except:
         raise Exception("not a working day")
